@@ -151,5 +151,5 @@ append using `r(files)'
 order feature coef
 cd ../..
 sort feature
-sa IDS-exploratory-regtables, replace
+sa ./results/IDS-exploratory-regtables, replace
 restore
