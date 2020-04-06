@@ -8,3 +8,7 @@ This repository contains data and code for Moser et al. (2020) "Acoustic regular
 `/analysis` contains Stata and R scripts for analysis of the naïve listener experiment, exploratory-confirmatory modeling, LASSO classification, and the convergent analyses. These scripts output tables and other data in `/results`.
 
 `/viz` contains an R script for all visualizations in the paper, interim datasets for visualization, and the visualizations as pdfs. Some figure elements are augmented manually (e.g., adding labels) so your reproduced figures will not match those in the paper exactly.
+
+## Assistance
+
+For assistance using any of the data or materials associated with this project, please contact Cody Moser (cmoser@g.harvard.edu) and Samuel Mehr (sam@wjh.harvard.edu).
