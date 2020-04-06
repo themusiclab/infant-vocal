@@ -21,6 +21,30 @@ set rmsg on
 ** get data
 insheet using ./data/IDS_naiveListeners.csv, names
 
+** export collapsed version for convergent analyses & fig 2
+preserve
+gen adult = response=="adult"
+gen rt_correct = rt if score==1
+collapse (mean) baby adult score rt rt_correct, by(stimulus cat sung infdir)
+compress
+rename stimulus id
+replace id = id+"A" if cat=="id song"
+replace id = id+"B" if cat=="id speech"
+replace id = id+"C" if cat=="ad song"
+replace id = id+"D" if cat=="ad speech"
+gen pers = ustrleft(id,5)
+save ./results/IDS_songCollapse, replace
+export delimited using ./viz/vizData/IDS_fig2.csv, replace
+restore
+
+** export collapsed fieldsite-wise for fig S2
+preserve
+collapse (mean) baby, by(stim fieldsite cat sung infdir)
+egen fsm = mean(baby), by(fieldsite)
+egen n = count(stimulus), by(fieldsite)
+export delimited using ./viz/vizData/IDS_figS2.csv, replace
+restore
+
 ********************************************************************************
 ** ANALYSES ********************************************************************
 ********************************************************************************

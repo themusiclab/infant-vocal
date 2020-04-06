@@ -157,3 +157,89 @@ cd ~/git/ids
 sort feature
 sa ./results/IDS-confirmatory-regtables, replace
 restore
+
+********************************************************************************
+** EXPORT FOR VIZ **************************************************************
+********************************************************************************
+	
+insheet using ./data/IDS_Winsor.csv, names clear
+
+** destring
+destring praat* mir* tm* npvi*, replace force
+
+** rename too long names
+	foreach v of varlist *intensity* {
+		loc n = subinstr("`v'","intensity","it",.)
+		rename `v' `n'
+		}
+	foreach v of varlist *travel* {
+		loc n = subinstr("`v'","travel","trv",.)
+		rename `v' `n'
+		}
+	foreach v of varlist *vowel* {
+		loc n = subinstr("`v'","vowel","vow",.)
+		rename `v' `n'
+		}
+	foreach v of varlist *_quart {
+		loc n = subinstr("`v'","first_quart","1q",.)
+		rename `v' `n'
+		}
+	foreach v of varlist *_quart {
+		loc n = subinstr("`v'","third_quart","3q",.)
+		rename `v' `n'
+		}
+
+** normalize all vars
+foreach v of varlist praat_* mir_* tm_* npvi_* {
+	egen m`v' = mean(`v')
+	egen sd`v' = sd(`v')
+	replace `v' = (`v'-m`v')/sd`v'
+	}
+	
+** restrict to confirmatory vars // these are from ./viz/tables/TableS4.csv
+keep id-song mir_attack_med mir_inharmonicity mir_rolloff85 mir_roughness_iqr mir_roughness_med npvi_phrase npvi_total praat_f0_iqr praat_f0_med praat_f0trv_iqr praat_f0trv_med praat_f0_trv_rate_default praat_f0trv_rate_iqr praat_f0trv_rate_med praat_f1_med praat_it_iqr praat_it_med praat_ittrv_iqr praat_ittrv_med praat_ittrv_rate_defau praat_ittrv_rate_iqr praat_ittrv_rate_med praat_vowtrv_iqr praat_vowtrv_med praat_vowtrv_rate_default praat_vowtrv_rate_iqr praat_vowtrv_rate_med 
+
+** reshape
+foreach v of varlist praat_* mir_* npvi_* { //tm_* 
+	rename `v' f_`v'
+	}
+reshape long f_, i(id) j(feat, str)
+rename f_ z
+
+** labels
+la def infdir 1 "Infant-directed" 0 "Adult-directed"
+la val infantdir infdir
+la def song 1 "Song" 0 "Speech"
+la val song song
+
+** rename feats
+replace feat = "Attack Curve Slope (Median)" if feat=="mir_attack_med"
+replace feat = "Inharmonicity" if feat=="mir_inharmonicity"
+replace feat = "Energy Roll-off (85th %ile)" if feat=="mir_rolloff85"
+replace feat = "Roughness (IQR)" if feat=="mir_roughness_iqr"
+replace feat = "Roughness (Median)" if feat=="mir_roughness_med"
+replace feat = "nPVI (per phrase)" if feat=="npvi_phrase"
+replace feat = "nPVI (per recording)" if feat=="npvi_total"
+replace feat = "Pitch (IQR)" if feat=="praat_f0_iqr"
+replace feat = "Pitch (Median)" if feat=="praat_f0_median"
+replace feat = "Pitch Space (IQR)" if feat=="praat_f0trv_iqr"
+replace feat = "Pitch Space (Median)" if feat=="praat_f0trv_median"
+replace feat = "Pitch Rate (Whole)" if feat=="praat_f0_trv_rate_default"
+replace feat = "Pitch Rate (IQR)" if feat=="praat_f0trv_rate_iqr"
+replace feat = "Pitch Rate (Median)" if feat=="praat_f0trv_rate_median"
+replace feat = "First Formant (Median)" if feat=="praat_f1_median"
+replace feat = "Intensity (IQR)" if feat=="praat_it_iqr"
+replace feat = "Intensity (Median)" if feat=="praat_it_median"
+replace feat = "Intensity Space (IQR)" if feat=="praat_ittrv_iqr"
+replace feat = "Intensity Space (Median)" if feat=="praat_ittrv_median"
+replace feat = "Intensity Rate (Whole)" if feat=="praat_ittrv_rate_defau"
+replace feat = "Intensity Rate (IQR)" if feat=="praat_ittrv_rate_iqr"
+replace feat = "Intensity Rate (Median)" if feat=="praat_ittrv_rate_media"
+replace feat = "Vowel Space (IQR)" if feat=="praat_vowtrv_iqr"
+replace feat = "Vowel Space (Median)" if feat=="praat_vowtrv_median"
+replace feat = "Vowel Rate (Whole)" if feat=="praat_vowtrv_rate_default"
+replace feat = "Vowel Rate (IQR)" if feat=="praat_vowtrv_rate_iqr"
+replace feat = "Vowel Rate (Median)" if feat=="praat_vowtrv_rate_median"
+
+** export for viz
+export delimited using ./viz/vizData/IDS_fig3.csv, replace

@@ -67,6 +67,12 @@ foreach v of varlist praat_* mir_* tm_* npvi_* {
 	egen var`v' = sd(`v')
 	gen `v'_c = (`v'-m`v')/var`v' 			// center feature
 	}
+	
+** export normalized scores for viz
+preserve
+keep id baby cat *_c
+export delimited using ./viz/vizData/IDS_fig5.csv, replace
+restore
 
 ********************************************************************************
 ** analyze *********************************************************************

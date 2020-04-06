@@ -3,7 +3,7 @@
 #############
 
 ## config
-setwd("~/git/ids/") ## set your directory to a clone of the GitHub repository
+setwd("~/git/infant-vocal/") ## set your directory to a clone of the GitHub repository
 library(tidyverse)
 library(patchwork)
 library(ggrepel)
