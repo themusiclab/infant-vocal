@@ -1,0 +1,47 @@
+feature,compare,Variable,Statistic,est,se,z,p
+mir_rolloff85,ID vs. AD (overall),85th Energy Percentile,Whole,-665.11,182.2,-3.65,< .001
+mir_inharmonicity,,Inharmonicity,Whole,-0.01,0,-3.03,0.002
+praat_intensity_iqr,,Intensity,IQR,0.46,0.18,2.51,0.012
+praat_inttrav_rate_default,,Intensity Rate,Whole,2.07,0.43,4.81,< .001
+praat_inttrav_rate_iqr,,,IQR,2.08,0.52,4.04,< .001
+praat_inttrav_rate_med,,,Median,0.85,0.21,4.05,< .001
+praat_f0_iqr,,Pitch,IQR,26.27,5.89,4.46,< .001
+praat_f0_med,,,Median,41.55,7.64,5.44,< .001
+praat_f0travel_rate_default,,Pitch Rate,Whole,13.2,3.3,4,< .001
+praat_f0travel_rate_iqr,,,IQR,12.61,3.29,3.84,< .001
+praat_f0travel_rate_med,,,Median,3.12,0.66,4.7,< .001
+praat_f0travel_med,,Pitch Space,Median,1.19,0.25,4.73,< .001
+praat_vowtrav_iqr,,Vowel Space,IQR,30.83,12.52,2.46,0.014
+praat_vowtrav_rate_default,,Vowel Space Travel Rate,Whole,144.97,29.12,4.98,< .001
+praat_vowtrav_rate_iqr,,,IQR,179.47,41.49,4.33,< .001
+praat_vowtrav_rate_med,,,Median,71.18,15.08,4.72,< .001
+mir_attack_med,ID Song vs. AD Song,Attack Curve Slope,Median,-0.44,0.19,-2.31,0.021
+praat_f1_med,,First Formant,Median,-12.58,6.02,-2.09,0.037
+praat_intensity_iqr,,Intensity,IQR,-1.73,0.24,-7.17,< .001
+praat_intensity_med,,,Median,-1.2,0.54,-2.22,0.026
+praat_vowtrav_iqr,,Vowel Space,IQR,26.84,7.02,3.82,< .001
+praat_vowtrav_rate_default,,Vowel Space Travel Rate,Whole,24.82,11.5,2.16,0.031
+praat_vowtrav_rate_iqr,,,IQR,39.07,16.13,2.42,0.015
+praat_vowtrav_rate_med,,,Median,11.72,5.8,2.02,0.043
+mir_attack_med,ID Song vs. ID Speech,Attack Curve Slope,Median,-0.81,0.25,-3.29,0.001
+praat_f1_med,,First Formant,Median,-33.81,6.47,-5.23,< .001
+mir_inharmonicity,,Inharmonicity,Whole,-0.01,0,-2.02,0.043
+praat_inttrav_rate_default,,Intensity Rate,Whole,-3.92,0.36,-10.89,< .001
+praat_inttrav_rate_iqr,,,IQR,-5.03,0.43,-11.61,< .001
+praat_inttrav_rate_med,,,Median,-2.11,0.17,-12.25,< .001
+praat_inttrav_iqr,,Intensity Space,IQR,-1.33,0.16,-8.46,< .001
+praat_inttrav_med,,,Median,-0.83,0.07,-11.32,< .001
+npvi_phrase,,nPVI per Phrase,Whole,4.39,1.14,3.87,< .001
+npvi_total,,nPVI per Recording,Whole,4.81,0.88,5.45,< .001
+praat_f0travel_rate_default,,Pitch Rate,Whole,-28.11,2.54,-11.05,< .001
+praat_f0travel_rate_iqr,,,IQR,-31.97,2.56,-12.51,< .001
+praat_f0travel_rate_med,,,Median,-5.78,0.56,-10.25,< .001
+praat_f0travel_iqr,,Pitch Space,IQR,-9.99,0.77,-12.94,< .001
+praat_f0travel_med,,,Median,-2.7,0.23,-11.63,< .001
+mir_roughness_iqr,,Roughness,IQR,-6.63,2.04,-3.25,0.001
+mir_roughness_med,,,Median,-1.52,0.73,-2.07,0.038
+praat_vowtrav_iqr,,Vowel Space,IQR,-55.11,7.82,-7.05,< .001
+praat_vowtrav_med,,,Median,-31.27,3.98,-7.87,< .001
+praat_vowtrav_rate_default,,Vowel Space Travel Rate,Whole,-227.44,21.26,-10.7,< .001
+praat_vowtrav_rate_iqr,,,IQR,-310.78,27.95,-11.12,< .001
+praat_vowtrav_rate_med,,,Median,-124.53,11.05,-11.27,< .001

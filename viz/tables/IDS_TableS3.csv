@@ -1,0 +1,23 @@
+Feature,Variable,Prediction: ID vs AD,Prediction: ID song vs AD song,Prediction: ID song vs ID speech
+85th Energy Percentile,Whole,$-$,$-$,$-$
+Attack Curve Slopes,Median,$-$,$-$,$-$
+Attack Curve Slopes,Mean,$-$,$-$,$-$
+First Formant,Mean,$-$,$-$,$-$
+First Formant ,Max,$-$,$-$,$-$
+Inharmonicity,Whole,$-$,$-$,$-$
+Intensity,Minimum,$-$,$-$,$-$
+Intensity Rate,Whole,$-$,$-$,$-$
+nPVI per Phrase,Whole,$+$,$+$,$+$
+nPVI per Recording,Whole,$+$,$+$,$+$
+Pitch,Mean,$+$,$-$,$-$
+Pitch Space,Mean,$-$,$-$,$-$
+Pitch Rate,Whole,$-$,$-$,$-$
+Pulse Clarity,Whole,$+$,$+$,$+$
+Roughness,Mean,$-$,$-$,$-$
+Second Formant,Mean,$-$,$-$,$-$
+Second Formant,Max,$-$,$-$,$-$
+Tempo,Whole,$-$,$-$,$-$
+Temporal Modulation,St. Dev.,$-$,$-$,$-$
+Temporal Modulation,Peak,$-$,$-$,$-$
+Vowel Space,Mean,$+$,$+$,$+$
+Vowel Space Travel Rate,Whole,$+$,$+$,$+$

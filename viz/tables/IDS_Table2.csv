@@ -1,0 +1,32 @@
+Variable,Statistic,IDvsAD,IDSongVsADSong,IDSongVsIDSpeech,IDSpeechVsADSpeech
+Attack Curve Slope,IQR,$0.155$,$0.182$,$.$,$0.108$
+,Median\textsuperscript{\textit{pre}},$-0.139$,$\mathbf{-0.373}$,$\mathbf{-0.352}$,$0.176$
+Inharmonicity,Whole\textsuperscript{\textit{pre}},$\mathbf{-0.125}$,$-0.204$,$\mathbf{-0.029}$,$-0.04$
+Pulse Clarity,Whole\textsuperscript{\textit{pre}},$\mathbf{0.161}$,$0.069$,$0.336$,$0.19$
+85th Energy Percentile,Whole\textsuperscript{\textit{pre}},$\mathbf{-0.243}$,$-0.216$,$.$,$-0.152$
+Roughness,IQR,$-0.162$,$-0.159$,$-0.151$,$.$
+,Median,$0.178$,$.$,$\mathbf{-0.520}$,$0.002$
+Tempo,Whole\textsuperscript{\textit{pre}},$.$,$0.047$,$0.12$,$-0.007$
+nPVI per Phrase,Whole\textsuperscript{\textit{pre}},$-0.053$,$-0.061$,$\mathbf{-0.021}$,$.$
+Pitch,IQR,$\mathbf{0.093}$,$-0.16$,$.$,$0.386$
+,Median,$\mathbf{0.738}$,$0.097$,$0.259$,$1.276$
+Pitch Euclidian Distance,IQR,$\mathbf{-0.112}$,$\mathbf{-0.105}$,$\mathbf{-0.782}$,$.$
+,Median,$\mathbf{0.108}$,$-0.216$,$\mathbf{-0.909}$,$0.128$
+Pitch Euclidian Distance Travel Rate,IQR,$\mathbf{0.146}$,$-0.052$,$\mathbf{-0.735}$,$0.123$
+,Median,$\mathbf{0.178}$,$0.306$,$.$,$.$
+First Formant,IQR,$0.032$,$0.024$,$.$,$.$
+,Median,$-0.115$,$\mathbf{-0.114}$,$\mathbf{-0.369}$,$.$
+,Range,$-0.23$,$-0.328$,$-0.121$,$-0.009$
+Second Formant,Median,$0.042$,$-0.149$,$0.082$,$0.176$
+Intensity,IQR,$\mathbf{0.471}$,$0.295$,$\mathbf{-0.225}$,$0.456$
+,Median,$-0.406$,$\mathbf{-0.511}$,$0.595$,$.$
+Intensity Euclidian Distance,IQR,$-0.72$,$-0.543$,$.$,$-0.523$
+,Median,$-0.436$,$-0.154$,$\mathbf{-0.368}$,$-0.295$
+Intensity Euclidian Distance Travel Rate,IQR,$\mathbf{0.466}$,$.$,$.$,$0.08$
+,Median,$.$,$0.6$,$.$,$.$
+Vowel Space,IQR,$0.51$,$\mathbf{0.911}$,$.$,$.$
+,Median,$\mathbf{0.032}$,$\mathbf{0.062}$,$.$,$.$
+Vowel Space Travel Rate,IQR,$\mathbf{0.234}$,$\mathbf{0.567}$,$.$,$.$
+,Median,$.$,$\mathbf{-1.033}$,$\mathbf{-1.256}$,$0.984$
+Temporal Modulation,Peak\textsuperscript{\textit{pre}},$0.166$,$0.138$,$.$,$.$
+,SD\textsuperscript{\textit{pre}},$\mathbf{0.069}$,$0.005$,$\mathbf{0.045}$,$0.03$

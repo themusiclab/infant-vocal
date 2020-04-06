@@ -1,0 +1,22 @@
+Region,Sub-Region,Society,Language,Language Family,Subsistence type,N
+Africa,Central Africa,Mbendjele,Aka,Niger-Congo,Hunter-Gatherer,60
+,Eastern Africa,Hadza,Hadza,Hadza,Hunter-Gatherer,38
+,,Nyangatom,Nyangatom,Nilotic,Pastoralist,56
+,,Toposa,Toposa,Nilotic,Pastoralist,60
+Asia,East Asia,Beijing,Mandarin,Sino-Tibetan,Urban,124
+,South Asia,Jenu Kurubas,Kannada,Dravidian,Other,80
+,Southeast Asia,Mentawai Islanders,Mentawai,Austronesian,Horticulturalist,60
+Europe,Eastern Europe,Krakow,Polish,Indo-European,Urban,44
+,,Rural Poland,Polish,Indo-European,Intensive Agriculturalists,55
+,Scandinavia,Turku,Finnish \& Swedish,Uralic and Indo-European,Urban,80
+North America,North America,San Diego,English (USA),Indo-European,Urban,116
+,,Toronto,English (Canadian),Indo-European,Urban,198
+Oceania,Melanesia,Tannese Vanuatuans,Bislama,Indo-European Creole,Horticulturalist,90
+,,Enga,Enga,Trans-New Guinea,Horticulturalist,22
+,Polynesia,Wellington,English (New Zealand),Indo-European,Urban,228
+South America,Amazonia,Arawak,English Creole,Indo-European,Other,48
+,,Tsimane,Tsimane,Moseten-Tsimane,Horticulturalist,51
+,,S\'{a}para \& Achuar,Quechua \& Achuar,Quechuan \& Jivaroan,Horticulturalist,59
+,Central Andes,Quechua,Quechua,Quechuan,Agro-Pastoralist,49
+,Northwestern South America,Afrocolombians,Spanish,Indo-European,Horticulturalist,53
+,,Colombian Mestizos,Spanish,Indo-European,Commercial Economy,43

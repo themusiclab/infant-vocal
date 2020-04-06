@@ -1,0 +1,21 @@
+Variable,Label,Description
+id,filename,
+mir_attack,Attack Curve Slope,"MIRtoolbox detects events in the audio; for a subset of those it can compute an attack slope, which is the slope of the line from the beginning of the event to its peak."
+mir_roughness,Roughness,"A roughness measure based on the dissonant beating patterns produced by interference frequencies in the spectrum of the sound. MIRtoolbox produces a roughness curve; following Buyens et al. (2017), we reduce this to a single measure by taking the RMS-normalized mean."
+mir_rolloff85,85th Energy Percentile,"One way to estimate the amount of high frequency in the signal consists in finding the frequency such that a certain fraction of the total energy is contained below that frequency. This ratio is fixed by default to .85 (following Tzanetakis and Cook, 2002), other have proposed .95 (Pohle, Pampalk and Widmer, 2005)."
+mir_inharmonicity,Inharmonicity,"mirinharmonicity ``estimates the inharmonicity, i.e., the amount of partials that are not multiples of the [automatically detected] fundamental frequency, as a value between 0 and 1. More precisely, the inharmonicity considered here takes into account the amount of energy outside the ideal harmonic series."" (MIRtoolbox manual)"
+mir_tempo,Tempo,MIRtoolbox tempo detection with default parameters. Based on MIRtoolbox's event detection. Outputs a single number.
+mir_pulseclarity,Pule Clarity,"Estimates the rhythmic clarity, indicating the strength of the beats estimated by the mirtempo function."
+npvi_total,nPVI Recording,"The nPVI equation measures the ``average degree of durational contrast between adjacent events in a sequence"" (Daniele & Patel, 2015). This makes it especially useful for comparing rhythmic units across language and music (i.e., syllables vs. notes). To automatically detect events, we used Mertens' (2004) syllable detection algorithm."
+npvi_phrase,nPVI Phrase,"In addition to detecting syllables, Mertens' algorithm detects phrases. Whereas npvi_total computes nPVI based on the whole file as a continuous phrase, this measure computes the nPVI for each detected phrase and reports the mean. In other words, it excludes the distances between the ends and beginnings of phrases."
+tm_std_hz,Temporal Modulation,"The temporal modulations spectrum is the frequency decomposition of the amplitude envelope of a signal. This measures how loud something is at any given moment, and then we measure how fast the loudness changes. Trivial example: if the song is someone singing a note every second, the spectrum will have a peak at 1Hz. If the song is someone singing a note three times a second, but with an emphasis every three seconds, there will be a large peak at 1Hz, and a smaller peak at 3Hz. We're interested in the standard deviation of the spectrum, which we're construing as how exaggerated the peak is."
+praat_f0,Pitch,The pitch (f0) in Hertz for each song
+praat_pitch_rate,Pitch Rate,"The pitch rate is a measure of pitch change over unit time. In essence, the pitch rate gives us a measure of pitch curve smoothness (a lower value corresponds to a smoother curve)."
+praat_vowtrav,Vowel Space,The euclidian distance travelled in vowel space. This is equivalent to distance between two formants.
+praat_vowtrav_rate,Vowel Space Travel Rate,The euclidian distance travelled in vowel space over a rate of time. This is equivalent to distance between two formants divided by rate of travel.
+praat_intensity,Amplitude,A measure of amplitude (loudness) in decibels
+praat_intensity_rate,Amplitude Rate,A measure of decay in intensity curves in each song measured as change in intensity over rate in time.
+praat_f1,First Formant,The frequency in Herz of the first formant at each (.03125/sec) point
+praat_f2,Second Formant,The frequency in Herz of the second formant at each (.03125/sec) point
+meta_length,File duration,The length of the unedited sound files
+meta_edit_length,Concatenated file duration,The length of the concatenated versions of the sound files
