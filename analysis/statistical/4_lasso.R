@@ -18,7 +18,7 @@ library(glmnet)
 
 # todo: should loop this whole script over the winsorized vs imputed versions of the datasets
 
-d <- fread('./data/IDSWinsor.csv')
+d <- fread('./data/IDS_Winsor.csv')
 
 ## reformat identifiers
 d$id_recording <- d$id; d$id <- NULL
