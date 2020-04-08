@@ -1,3 +1,4 @@
 # ignore stata tempfiles
 /results/temp/*.dta
 /results/temp/*.csv
+.Rhistory
