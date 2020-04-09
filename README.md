@@ -1,5 +1,5 @@
 # Acoustic regularities in infant-directed vocalizations across cultures
-This repository contains data and code for Moser et al. (2020) "Acoustic regularities in infant-directed vocalizations across cultures". The paper is available at **XX URL**. The audio corpus is publicly available on the Open Science Framework (https://osf.io/m5yn2) and the naïve listener experiment is publicly available at https://themusiclab.org/quizzes/ids.
+This repository contains data and code for Moser et al. (2020) "Acoustic regularities in infant-directed vocalizations across cultures". The audio corpus is publicly available on the Open Science Framework (https://osf.io/m5yn2) and the naïve listener experiment is publicly available at https://themusiclab.org/quizzes/ids.
 
 ## Anatomy of the repo
 
