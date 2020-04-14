@@ -1,4 +1,8 @@
-## lasso analyses for IDS
+## IDS analyses: LASSO
+
+## This script runs LASSO analyses of acoustical features, reported in 
+## section 4.2 of Moser et al. (2020)
+## Preprint: https://www.biorxiv.org/content/10.1101/2020.04.09.032995v1
 
 # set your directory to the cloned repo
 setwd("~/git/ids")
